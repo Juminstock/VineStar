@@ -1,5 +1,5 @@
 <h1 align="center">Videogame on CLI</h1>
-<img src="https://media1.giphy.com/media/l0HlQXlQ3nHyLMvte/200w.webp?cid=ecf05e47nia47d5n90ql755b0acer7obz0yotdace6xce5iq&rid=200w.webp&ct=g" align="right" width="120">
+<img src="https://media1.giphy.com/media/l0HlQXlQ3nHyLMvte/200w.webp?cid=ecf05e47nia47d5n90ql755b0acer7obz0yotdace6xce5iq&rid=200w.webp&ct=g" align="right" width="300">
 <p>
   Small video game to play through the command line. It is a mystical story that will unfold according to your answers. To play it you must do the following steps:
   <ul>
