@@ -1,4 +1,4 @@
-<h1 align="center">Videogame on CLI<h1>
+<h1 align="center">Videogame on CLI</h1>
 <p>
   Small video game to play through the command line. It is a mystical story that will unfold according to your answers. To play it you must do the following steps:
   <ul>
