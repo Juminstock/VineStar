@@ -1,0 +1,37 @@
+[package]
+name = "wine_minter"
+version = "0.1.0"
+authors = ["Carlos Rodríguez [juminstock@gmail.com]"]
+edition = "2021"
+
+[dependencies]
+ink = { version = "4.0.0", default-features = false }
+
+scale = { package = "parity-scale-codec", version = "3", default-features = false, features = ["derive"] }
+scale-info = { version = "2.3", default-features = false, features = ["derive"], optional = true }
+
+openbrush = { tag = "4.0.0-beta", git = "https://github.com/Brushfam/openbrush-contracts", default-features = false, features = ["ownable", "reentrancy_guard", "psp34"] }
+
+payable_mint_pkg = { path = "../../logics", default-features = false }
+
+[lib]
+name = "wine_minter"
+path = "lib.rs"
+crate-type = [
+	# Used for normal contract Wasm blobs.
+	"cdylib",
+]
+
+[features]
+default = ["std"]
+std = [
+    "ink/std",
+
+    "scale/std",
+    "scale-info/std",
+
+    "openbrush/std",
+
+    "payable_mint_pkg/std"
+]
+ink-as-dependency = []
