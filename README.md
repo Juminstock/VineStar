@@ -52,7 +52,7 @@ These are the primary features that make our application a true star.
 
 #### Technical Architecture
 ![VineStar structure 1](https://github.com/Juminstock/VineStar/blob/main/assets/Vinestar_structure1.jpg)
-![VineStar structure 2](assets/Vinestar_structure2.png)
+![VineStar structure 2](https://github.com/Juminstock/VineStar/blob/main/assets/Vinestar_structure2.png)
 
 #### Project Logo
 
