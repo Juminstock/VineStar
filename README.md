@@ -51,8 +51,8 @@ These are the primary features that make our application a true star.
 - Twitter/X:
 
 #### Technical Architecture
-![VineStar structure 1](docs/Vinestar_structure1.png)
-![VineStar structure 2](docs/Vinestar_structure2.png)
+![VineStar structure 1](assets/Vinestar_structure1.png)
+![VineStar structure 2](assets/Vinestar_structure2.png)
 
 #### Project Logo
 
