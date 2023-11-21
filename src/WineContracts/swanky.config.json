@@ -33,9 +33,9 @@
     }
   },
   "contracts": {
-    "WineMinter": {
-      "name": "WineMinter",
-      "moduleName": "wine_minter",
+    "WineContract": {
+      "name": "WineContract",
+      "moduleName": "wine_contract",
       "deployments": []
     }
   }

@@ -1,7 +1,7 @@
 [package]
-name = "wine_minter"
+name = "wine_contract"
 version = "0.1.0"
-authors = ["Carlos Rodríguez [juminstock@gmail.com]"]
+authors = ["Carlos Rodríguez <[juminstock@gmail.com]>"]
 edition = "2021"
 
 [dependencies]
@@ -15,8 +15,9 @@ openbrush = { tag = "4.0.0-beta", git = "https://github.com/Brushfam/openbrush-c
 payable_mint_pkg = { path = "../../logics", default-features = false }
 
 [lib]
-name = "wine_minter"
+name = "wine_contract"
 path = "lib.rs"
+
 crate-type = [
 	# Used for normal contract Wasm blobs.
 	"cdylib",

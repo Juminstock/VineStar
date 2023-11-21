@@ -289,3 +289,5 @@ _-error.log
 /tmp
 node_modules
 oclif.manifest.json
+typedContracts/
+artifacts/

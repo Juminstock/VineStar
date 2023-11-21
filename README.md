@@ -51,8 +51,8 @@ These are the primary features that make our application a true star.
 - Twitter/X:
 
 #### Technical Architecture
-
-![VineStar structure](docs/Vinestar_structure.png)
+![VineStar structure 1](docs/Vinestar_structure1.png)
+![VineStar structure 2](docs/Vinestar_structure2.png)
 
 #### Project Logo
 
@@ -79,8 +79,9 @@ All this tasks are being completed during the hackathon.
 
 ## Team Information
 
-- Jose Luis Manco - Fullstack web developer
+- Jose Luis Manco - Fullstack engineer
 - Francisco Albornoz - Bussiness developer
-- Carlos Rodriguez - Rust blockchain developer
-- Eduardo - Designer and marketing lead
-- Franklyn - Web developer
+- Carlos Rodriguez - Rust y web3 blockchain developer
+- Eduardo Cardoso - Designer and marketing lead
+- Franklyn Ccahuana- Web developer
+- Alberto Torres - Chief Sommelier
