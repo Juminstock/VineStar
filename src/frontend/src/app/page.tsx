@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 
+import { ApillonConfig } from '@apillon/sdk'
 import React from 'react'
 import { Stack } from '@visx/shape'
 import { PatternCircles, PatternWaves } from '@visx/pattern'
