@@ -1,15 +1,21 @@
-async function getData() {
-    const res = await fetch('https://api.apillon.io')
-   
-    if (!res.ok) {
-      throw new Error('Failed to fetch data')
-    }
-   
-    return res.json()
-  }
-   
-  export default async function page() {
-    const data = await getData()
-   
-    return <main></main>
-  }
+import { Web3Auth } from "@web3auth/modal";
+import { OpenloginAdapter } from "@web3auth/openlogin-adapter";
+
+const web3auth = new Web3Auth({
+  clientId: "BLhoAFEWcWbSjN63ZCWYpv8P1G5kL8_7UwuUhqPdUnX4RSOI0SahOZk8IOiZjCbiPMpovqsQYViGs0glHH6MrFM",
+  web3AuthNetwork: "sapphire_mainnet",
+  chainConfig: {
+    chainNamespace: "other",
+  },
+});
+
+const openloginAdapter = new OpenloginAdapter({
+  adapterSettings: {
+    uxMode: "popup",
+  },
+});
+web3auth.configureAdapter(openloginAdapter);
+
+await web3auth.initModal();
+
+const web3authProvider = await web3auth.connect(); // web3auth.provider
