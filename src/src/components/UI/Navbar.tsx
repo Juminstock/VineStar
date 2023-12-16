@@ -21,13 +21,9 @@ function Navbar () {
         <FlowbiteNav.Toggle />
       </div>
       <FlowbiteNav.Collapse>
-        <FlowbiteNav.Link href='#' active>
-          Home
-        </FlowbiteNav.Link>
-        <FlowbiteNav.Link href='#'>About</FlowbiteNav.Link>
-        <FlowbiteNav.Link href='#'>Services</FlowbiteNav.Link>
-        <FlowbiteNav.Link href='#'>Pricing</FlowbiteNav.Link>
-        <FlowbiteNav.Link href='#'>Contact</FlowbiteNav.Link>
+        <FlowbiteNav.Link href='/'>Home</FlowbiteNav.Link>
+        <FlowbiteNav.Link href='/dashboard'>Dashboard</FlowbiteNav.Link>
+        <FlowbiteNav.Link href='/admin'>Admin dashboard</FlowbiteNav.Link>
       </FlowbiteNav.Collapse>
     </FlowbiteNav>
   )
