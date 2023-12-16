@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle
 } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 
 const wines = [
@@ -62,28 +63,49 @@ const wines = [
 
 function page () {
   return (
-    <section className='w-full pt-40 px-20 flex flex-col gap-5 justify-center items-center'>
-      <h1 className='text-4xl font-bold'>Panel de usuario</h1>
-      <div className='userDashboard w-full justify-center items-center'>
-        {wines.map((wine, index) => (
-          <Card key={index}>
-            <CardHeader>
-              <CardTitle>{wine.name}</CardTitle>
-              <CardDescription>{wine.description}</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Image width={300} height={500} src={wine.image} alt='wine' />
-            </CardContent>
-            <CardFooter className='flex flex-col gap-2 justify-center items-start'>
-              <div className='text-sm text-muted-foreground'>
-                {wine.stock} in stock
-              </div>
-              <div className='text-sm font-semibold'>${wine.price}</div>
-            </CardFooter>
-          </Card>
-        ))}
-      </div>
-    </section>
+    <main>
+      <section className='w-full pt-40 px-20 flex flex-col gap-5 justify-center items-center'>
+        <h1 className='text-4xl font-bold'>Panel de usuario</h1>
+        <div className='userDashboard w-full justify-center items-center'>
+          {wines.map((wine, index) => (
+            <Card key={index}>
+              <CardHeader>
+                <CardTitle>{wine.name}</CardTitle>
+                <CardDescription>{wine.description}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image width={300} height={500} src={wine.image} alt='wine' />
+              </CardContent>
+              <CardFooter className='flex flex-row  justify-between items-start'>
+                <div>
+                  <div className='text-sm text-muted-foreground'>
+                    {wine.stock} in stock
+                  </div>
+                  <div className='text-sm font-semibold'>${wine.price}</div>
+                </div>
+                <div className='flex flex-row gap-2 justify-center items-center'>
+                  <Button
+                    variant='outline'
+                    className='border-green-400 text-green-400 font-semibold'
+                  >
+                    Comprar
+                  </Button>
+                  <Button
+                    variant='outline'
+                    className='border-blue-400 text-blue-400 font-semibold'
+                  >
+                    Vender
+                  </Button>
+                </div>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+      </section>
+      <section>
+        
+      </section>
+    </main>
   )
 }
 
